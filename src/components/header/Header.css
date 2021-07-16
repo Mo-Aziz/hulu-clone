@@ -1,3 +1,63 @@
-.header__icons{
-   
+.header {
+  color: rgb(117, 228, 135);
+  display: flex;
+  padding: 20px;
+  /* background-color: black; */
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.header {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.header > img {
+  object-fit: contain;
+  height: 200px;
+  padding-right: 0;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* centering material ui icons to the middle of the div container */
+.header__icon > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 100px;
+}
+
+.header__icon > p {
+  display: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+/* icon title hover effect */
+.header__icon:hover > p {
+  display: inline-flex;
+}
+
+.header__icon--active > p {
+  display: inline-flex !important;
 }
