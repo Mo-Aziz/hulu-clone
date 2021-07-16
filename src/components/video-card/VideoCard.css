@@ -20,3 +20,19 @@ transition: transform 100ms ease-in-out;
 .video__card>h2{
    padding-top: 10px;
 }
+
+.videoCard__stats{
+   display: none;
+}
+.video__card:hover > .videoCard__stats{
+   display:inline;
+   display: flex;
+   justify-content:flex-start;
+
+   align-items: center;
+}
+p >.thump__up{
+   padding-left: 10px;
+   padding-right: 5px;
+   padding-top: 5px ;
+   color: rgb(117, 228, 135);}

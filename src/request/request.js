@@ -1,6 +1,6 @@
 const API_KEY='288787058dc693127e98949ba9145df6';
 
-// fetching weekly trending movies
+// fetching the movies
 export default{
    fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
    fetchTopRated:  `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
